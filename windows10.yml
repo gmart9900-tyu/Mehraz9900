@@ -3,11 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "8.1"
+      VERSION: "10"
       USERNAME: "mehraz"
       PASSWORD: "admin@123"
-      RAM_SIZE: "4G"
-      CPU_CORES: "4"
+      RAM_SIZE: "12G"
+      CPU_CORES: "3"
       DISK_SIZE: "400G"
       DISK2_SIZE: "100G"
     devices:
@@ -20,4 +20,4 @@ services:
       - "3389:3389/tcp"
       - "3389:3389/udp"
     stop_grace_period: 2m
-m
+
